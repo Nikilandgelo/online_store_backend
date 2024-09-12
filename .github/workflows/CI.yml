@@ -26,7 +26,13 @@ jobs:
               ports:
                 - 5432:5432
               options: >-
-                --health-cmd pg_isready
+                --health-cmd pg_isready  
+            redis:
+              image: redis:7.4-alpine
+              ports:
+                - 6379:6379
+              options: >-
+                --health-cmd "redis-cli ping"
                 --health-retries 15
                 --health-interval 1s
         steps:
