@@ -1,0 +1,29 @@
+name: CI pipeline
+on:
+    push:
+        branches:
+            - main
+jobs:
+    CI:
+        name: Continuous integration
+        runs-on: ubuntu-22.04
+        defaults:
+            run:
+                working-directory: ./DRFProject
+        steps:
+            - name: Pulling repository
+              uses: actions/checkout@v4.1.7
+              with:
+                repository: Nikilandgelo/online_store_backend
+            - name: Install Python
+              uses: actions/setup-python@v5.2.0
+              with:
+                python-version: 3.12
+            - name: Install dependencies
+              run: pip install -r requirements.txt
+            - name: Run Linter
+              run: >-
+                flake8 .
+                --exclude=**/migrations/*,.venv/*,**/settings.py,**/html_forms.py,**/apps.py
+            - name: Run Tests with coverage
+              run: pytest --cov=.
