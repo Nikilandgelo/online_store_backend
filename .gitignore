@@ -1,0 +1,10 @@
+**/.DS_Store
+**/__pycache__
+**/.venv
+**/.env
+**/.vs
+**/.vscode
+**/.pytest_cache
+**/.history
+**/migrations/*
+!**/migrations/__init__.py
