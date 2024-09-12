@@ -1,0 +1,58 @@
+networks:
+  default:
+
+volumes:
+  postgres_data:
+  redis_data:
+
+services:
+  PostgresDB:
+    image: postgres:16-alpine
+    container_name: postgresDB_container
+    env_file:
+      - .env
+    healthcheck:
+      test: "pg_isready -U postgres"
+      interval: 1s
+      retries: 15
+    ports:
+      - 6666:5432                               # port exposed for dbeaver
+    restart: unless-stopped
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - default
+
+  Redis:
+    image: redis:7.4-alpine
+    container_name: redis_container
+    healthcheck:
+      test: redis-cli ping
+      interval: 1s
+      retries: 15
+    ports:
+      - 6379:6379                              # port exposed for redis insight
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    networks:
+      - default
+
+  backend:
+    build:
+      context: .
+      dockerfile: ./DRFProject/Dockerfile
+      additional_contexts:
+        - app=./DRFProject
+    container_name: DRFProject_container
+    depends_on:
+      PostgresDB:
+        condition: service_healthy
+      Redis:
+        condition: service_healthy
+    env_file:
+      - .env
+    ports:
+      - 8000:8000
+    networks:
+      - default
