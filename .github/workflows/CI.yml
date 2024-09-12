@@ -44,5 +44,7 @@ jobs:
               run: >-
                 flake8 .
                 --exclude=**/migrations/*,.venv/*,**/settings.py,**/html_forms.py,**/apps.py
+            - name: Run Migrations for tests
+              run: python manage.py makemigrations && python manage.py migrate
             - name: Run Tests with coverage
               run: pytest --cov=.
