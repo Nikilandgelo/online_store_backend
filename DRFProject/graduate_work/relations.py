@@ -30,6 +30,6 @@ class FinderNameField(serializers.PrimaryKeyRelatedField):
         try:
             return self.model.objects.get(**{self.finder_field: data})
         except self.model.DoesNotExist as error:
-            raise serializers.ValidationError((f'{self.model.__name__} with'
+            raise serializers.ValidationError((f'{self.model.__name__} with '
                                                f'{self.finder_field} "{data}"'
-                                               f'does not exist.')) from error
+                                               f' does not exist.')) from error
