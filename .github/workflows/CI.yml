@@ -9,6 +9,7 @@ env:
   POSTGRES_DB: ${{ secrets.POSTGRES_DB }}
   POSTGRES_HOST: ${{ secrets.POSTGRES_HOST }}
   POSTGRES_PORT: ${{ secrets.POSTGRES_PORT }}
+  REDIS_HOST: ${{ secrets.REDIS_HOST }}
 jobs:
     CI:
         name: Continuous integration
