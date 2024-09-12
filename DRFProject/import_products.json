@@ -1,0 +1,242 @@
+{
+    "Смартфон Apple iPhone XR 256GB (черный)": {
+      "quantity": 5,
+      "price": 65000,
+      "description": "Android users are not allowed to buy this product",
+      "parameters": [
+        {
+          "name": "Диагональ (дюйм)",
+          "value": "6.1"
+        },
+        {
+          "name": "Разрешение (пикс)",
+          "value": "1792x828"
+        },
+        {
+          "name": "Встроенная память (Гб)",
+          "value": "256"
+        },
+        {
+          "name": "Цвет",
+          "value": "черный"
+        }
+      ]
+    },
+    "Смартфон Apple iPhone XR 128GB (синий)": {
+      "quantity": 10,
+      "price": 60000,
+      "description": "Perfect for photography lovers with a passion for color",
+      "parameters": [
+        {
+          "name": "Диагональ (дюйм)",
+          "value": "6.1"
+        },
+        {
+          "name": "Разрешение (пикс)",
+          "value": "1792x828"
+        },
+        {
+          "name": "Встроенная память (Гб)",
+          "value": "128"
+        },
+        {
+          "name": "Цвет",
+          "value": "синий"
+        }
+      ]
+    },
+    "Smartphone Samsung Galaxy S20 128GB (black)": {
+      "quantity": 8,
+      "price": 55000,
+      "description": "Experience the next level of mobile innovation",
+      "parameters": [
+        {
+          "name": "Screen Size (inches)",
+          "value": "6.2"
+        },
+        {
+          "name": "Resolution (pixels)",
+          "value": "3200x1440"
+        },
+        {
+          "name": "Internal Memory (GB)",
+          "value": "128"
+        },
+        {
+          "name": "Color",
+          "value": "black"
+        }
+      ]
+    },
+    "Smartphone Samsung Galaxy Note20 256GB (mystic bronze)": {
+      "quantity": 4,
+      "price": 90000,
+      "description": "Unleash your creativity with the S Pen",
+      "parameters": [
+        {
+          "name": "Screen Size (inches)",
+          "value": "6.7"
+        },
+        {
+          "name": "Resolution (pixels)",
+          "value": "2400x1080"
+        },
+        {
+          "name": "Internal Memory (GB)",
+          "value": "256"
+        },
+        {
+          "name": "Color",
+          "value": "mystic bronze"
+        }
+      ]
+    },
+    "USB Flash Drive SanDisk Ultra Flair 64GB (silver)": {
+      "quantity": 20,
+      "price": 1500,
+      "description": "Fast and reliable storage for all your files",
+      "parameters": [
+        {
+          "name": "Capacity (GB)",
+          "value": "64"
+        },
+        {
+          "name": "Color",
+          "value": "silver"
+        }
+      ]
+    },
+    "USB Flash Drive Kingston DataTraveler 32GB (red)": {
+      "quantity": 30,
+      "price": 1000,
+      "description": "Compact and durable design for easy portability",
+      "parameters": [
+        {
+          "name": "Capacity (GB)",
+          "value": "32"
+        },
+        {
+          "name": "Color",
+          "value": "red"
+        }
+      ]
+    },
+    "Smartphone Xiaomi Mi 10T Pro 256GB (cosmic black)": {
+      "quantity": 6,
+      "price": 50000,
+      "description": "High performance at an unbeatable price",
+      "parameters": [
+        {
+          "name": "Screen Size (inches)",
+          "value": "6.67"
+        },
+        {
+          "name": "Resolution (pixels)",
+          "value": "2400x1080"
+        },
+        {
+          "name": "Internal Memory (GB)",
+          "value": "256"
+        },
+        {
+          "name": "Color",
+          "value": "cosmic black"
+        }
+      ]
+    },
+    "Samsung QLED Q90R 65\" 4K UHD Smart TV": {
+      "quantity": 3,
+      "price": 120000,
+      "description": "Immersive QLED experience with Quantum HDR",
+      "parameters": [
+        {
+          "name": "Screen Size (inches)",
+          "value": "65"
+        },
+        {
+          "name": "Resolution (pixels)",
+          "value": "3840x2160"
+        },
+        {
+          "name": "Smart TV",
+          "value": "true"
+        }
+      ]
+    },
+    "LG OLED CX 55\" 4K UHD Smart TV": {
+      "quantity": 5,
+      "price": 110000,
+      "description": "Deep blacks and stunning contrast with OLED technology",
+      "parameters": [
+        {
+          "name": "Screen Size (inches)",
+          "value": "55"
+        },
+        {
+          "name": "Resolution (pixels)",
+          "value": "3840x2160"
+        },
+        {
+          "name": "Smart TV",
+          "value": "true"
+        }
+      ]
+    },
+    "Sony Bravia X900H 75\" 4K UHD Smart TV": {
+      "quantity": 2,
+      "price": 140000,
+      "description": "Smooth motion and vibrant colors with X-Motion Clarity",
+      "parameters": [
+        {
+          "name": "Screen Size (inches)",
+          "value": "75"
+        },
+        {
+          "name": "Resolution (pixels)",
+          "value": "3840x2160"
+        },
+        {
+          "name": "Smart TV",
+          "value": "true"
+        }
+      ]
+    },
+    "TCL 6-Series 55\" 4K UHD Smart TV": {
+      "quantity": 7,
+      "price": 60000,
+      "description": "Advanced picture quality with Mini-LED technology",
+      "parameters": [
+        {
+          "name": "Screen Size (inches)",
+          "value": "55"
+        },
+        {
+          "name": "Resolution (pixels)",
+          "value": "3840x2160"
+        },
+        {
+          "name": "Smart TV",
+          "value": "true"
+        }
+      ]
+    },
+    "Vizio P-Series Quantum 65\" 4K UHD Smart TV": {
+      "quantity": 4,
+      "price": 65000,
+      "description": "Quantum color and powerful performance for cinema-quality viewing",
+      "parameters": [
+        {
+          "name": "Screen Size (inches)",
+          "value": "65"
+        },
+        {
+          "name": "Resolution (pixels)",
+          "value": "3840x2160"
+        },
+        {
+          "name": "Smart TV",
+          "value": "true"
+        }
+      ]
+    }
+  }
