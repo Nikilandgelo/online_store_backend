@@ -16,18 +16,19 @@ jobs:
         defaults:
             run:
                 working-directory: ./DRFProject
-        container:
-            image: postgres:16-alpine
-            env:
-                POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
-                POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
-                POSTGRES_DB: ${{ secrets.POSTGRES_DB }}
-            ports:
-              - 5432:5432
-            options: >-
-              --health-cmd pg_isready
-              --health-retries 15
-              --health-interval 1s
+        services:
+            postgresDB:
+              image: postgres:16-alpine
+              env:
+                  POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
+                  POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
+                  POSTGRES_DB: ${{ secrets.POSTGRES_DB }}
+              ports:
+                - 5432:5432
+              options: >-
+                --health-cmd pg_isready
+                --health-retries 15
+                --health-interval 1s
         steps:
             - name: Pulling repository
               uses: actions/checkout@v4.1.7
