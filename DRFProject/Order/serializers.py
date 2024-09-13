@@ -70,7 +70,7 @@ class OrderSerializer(ModelSerializer):
         except IntegrityError as error:
             raise ValidationError(
                 (f'Sorry, product "{product.name}" is temporarily not'
-                 'available in the desired quantity.')) from error
+                 ' available in the desired quantity.')) from error
         send_email.delay(title='Confirm your order',
                          email=user.email,
                          html_message=EMAIL_CONFIRM_ORDER.format(

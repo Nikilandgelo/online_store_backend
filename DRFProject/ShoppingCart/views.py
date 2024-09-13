@@ -42,6 +42,6 @@ class ShoppingCartView(APIView):
         except ShoppingCartProducts.DoesNotExist:
             return Response(
                 (f'Product with id {id_product} in your shopping cart'
-                 f'does not exists'), 400)
+                 f' does not exists'), 400)
 
         return Response('Products have been deleted', 204)

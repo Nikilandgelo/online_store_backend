@@ -37,7 +37,7 @@ class ShoppingCartSerializer(Serializer):
                     quantity = product.get('quantity') or 1
                     if quantity > product['product'].quantity:
                         raise IntegrityError(
-                            (f'Quantity is too big, you can only buy'
+                            (f'Quantity is too big, you can only buy '
                              f'{product["product"].quantity} products'))
                     ShoppingCartProducts.objects.create(**product)
         except IntegrityError as error:
